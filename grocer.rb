@@ -24,7 +24,11 @@ def consolidate_cart(cart)
     if find_item_by_name_in_collection(name, consolidated_cart)
       find_item_by_name_in_collection(name, consolidated_cart)[:count] += 1 
     else
-      consolidated_cart <<
+      consolidated_cart << cart[index]
+    end
+    index += 1 
+  end
+  consolidated_cart
 end
 
 def apply_coupons(cart, coupons)
