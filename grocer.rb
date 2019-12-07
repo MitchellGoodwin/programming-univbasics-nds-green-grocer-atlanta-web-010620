@@ -20,7 +20,8 @@ def consolidate_cart(cart)
   consolidated_cart = []
   index = 0 
   while index < cart.length do 
-    
+    if find_item_by_name_in_collection(cart[index][:item], consolidated_cart)
+      
 end
 
 def apply_coupons(cart, coupons)
