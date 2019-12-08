@@ -58,7 +58,7 @@ def apply_coupons(cart, coupons)
           :count => coupons[index][:num] 
         }
         cart << cart_item_with_coupon
-        
+        cart_item[:count] -= coupons[index][:num]
 end
 
 def apply_clearance(cart)
