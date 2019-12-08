@@ -46,7 +46,7 @@ def apply_coupons(cart, coupons)
     item_coupon_name = "#{coupons[index][:item]} W/COUPON"
     cart_item = find_item_by_name_in_collection(coupons[index][:item], cart)
     cart_item_with_coupon = find_item_by_name_in_collection(item_coupon_name, cart)
-    if cart_item && cart_item[:count] 
+    if cart_item && cart_item[:count] >= 
 end
 
 def apply_clearance(cart)
