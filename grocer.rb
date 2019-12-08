@@ -43,7 +43,7 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   index = 0 
   while index < coupons.length do 
-    item_coupon_name = "#{coupons[index]["
+    item_coupon_name = "#{coupons[index][:item]} W/"
 end
 
 def apply_clearance(cart)
