@@ -48,7 +48,8 @@ def apply_coupons(cart, coupons)
     cart_item_with_coupon = find_item_by_name_in_collection(item_coupon_name, cart)
     if cart_item && cart_item[:count] >= coupons[index][:num]
       if cart_item_with_coupon
-        cart_item_with_coupon[:count] += 
+        cart_item_with_coupon[:count] += coupons[index][:num]
+        
 end
 
 def apply_clearance(cart)
